@@ -1,0 +1,710 @@
+*,*::before,*::after{
+    box-sizing:border-box;
+  }
+  
+  /*general*/
+  body{
+      background : #fff; 
+      color : #303030;
+      font-family : san-serif;
+      font-size : 1rem;
+      line-height : 1.6;
+  }
+  
+  .logo img {
+      width: 43px;
+      height: 45px;
+      border-radius: 30px;
+  }
+ 
+  .humburger{
+    display:block;
+    position:relative;
+  }
+  
+  .humburger,
+  .humburger::before,
+  .humburger::after{
+    background-color:aqua;
+    width:4em;
+    height:6px;
+    border-radius:2em;
+    transition:transform 250ms cubic-bezier(.5, 0, .5, 1))
+  }
+  
+  .humburger::before,
+  .humburger::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    
+  }
+  
+  .humburger::before{top:12px;}
+  .humburger::after{bottom:12px;}
+
+@media (max-width: 380px){
+  .intro__img {
+    height: 250px;
+    width: 220px;
+    margin:0 auto;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.25em 0.12em 0.25em rgba(0,0,0,0.25);
+  }
+}
+
+  /*intro*/
+  @media (max-width:524px){
+    .about-me__body{
+       padding:7rem 0 0 0;
+    }      
+  
+    .section__title--intro strong {
+      display: block;
+    }
+  
+    .section__subtitle--intro {
+      background-color: aqua;
+      font-size: 2rem;
+      font-family:monospace;
+      margin-left: .75rem;
+    }
+  
+    .section__title--intro {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+    .section__title{
+      margin : 0 auto;
+     }
+    .intro__img {
+      height: 350px;
+      width: 300px;
+      margin:0 auto;
+      box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.25em 0.12em 0.25em rgba(0,0,0,0.25);
+    }
+  
+    #home {
+      width: 100%;
+      text-align: center;
+    }    
+
+  }
+
+  @media (max-width: 380px){
+    .intro__img {
+      height: 250px;
+      width: 220px;
+      margin:0 auto;
+      box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.25em 0.12em 0.25em rgba(0,0,0,0.25);
+    }
+  }
+
+  @media (min-width:700px){
+        
+    .nav-toggle{
+      display: none;
+  }
+
+  .nav {
+      width: 100%;
+      display: flex;
+  }
+
+  ul.nav__list {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  a.nav__link {
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: beige;
+      color: revert;
+      border: 2px solid palegoldenrod;
+      padding: .05rem;
+  }
+
+  a.nav__link:hover {
+      background-color: darkturquoise;
+      color: aliceblue;
+      border: none;
+  }
+
+  }
+
+  @media (min-width:525px){
+    .logo {
+        padding: 13px;
+    }
+
+     .about-me__body {
+      padding: 7rem 4rem 0 0;
+     }
+    .intro__img {
+      height: 250px;
+      width: 215px;
+      box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.25em 0.12em 0.25em rgba(0,0,0,0.25);
+      bottom:11rem;
+      position:relative;
+      left:2rem;
+      z-index:2;
+    }
+  
+    .section__title--intro {
+      font-size: 2rem;
+    }
+  
+    .section__title--intro strong {
+      display: block;
+    } 
+  
+    .section__subtitle--intro {
+      font-family: monospace;
+      text-align: right;
+      max-width: 500px;
+      clear:both;
+      position:relative;
+      top:5rem;
+      background-color: aqua;
+      font-size: 1.6rem;
+      line-height:2;
+    }
+  
+    .section__title--intro {
+      font-weight: 300;
+      float:right;
+      clear:both;
+      position:relative;
+      top:5rem;
+      text-align:left;
+    }
+  
+  
+    #home {
+      text-align: center;
+      max-width: 500px;
+      max-height:350px;
+      margin:0 auto;
+    }
+  
+  }
+  
+  /*Personally*/
+  .my-services{
+     color : white;
+  }
+  
+  @media (min-width:0px){
+     about-me__body p{
+       min-width:100%;
+     }
+  }
+  
+  /*Personally*/
+  
+  
+  section{
+     padding : 5em 2em; 
+  }
+  
+  img{
+     display : block;
+     z-index: 2;
+  }
+  
+  h1,h2,h3{
+     line-height : 1.6;
+     margin : 0;
+  }
+  strong{font-weight : 900}
+  
+  /*topography*/
+  
+  h1{font-size : 4.5rem;}
+  h2{font-size : 3.75rem;}
+  h3{font-size : 1.5rem;}
+  
+  .section__subtitle--about{
+     background : #16e0bd;
+     padding : 0.25em 1em;
+     font-family : monospace;
+     margin-bottom : 1rem;
+  }
+  
+  @media (min-width:500px){
+     .section__subtitle--about{
+       padding-left:1em;
+     }
+  }
+  
+  @media (max-width : 1000px){
+    .section__title--about, .section__subtitle--about {
+      position: relative;
+      top: 7rem;
+    }
+    .section__subtitle--about{
+      line-height:2;
+      font-size:2rem;
+      text-align:center;
+    }
+  }
+  
+@media (max-width: 700px){
+  .nav{
+    position : fixed;
+    background : black;
+    color : light;
+    top:0;
+    right:0;
+    height:100%;
+    transform:translateX(100%);
+    z-index:100;
+    transition:transform 250ms cubic-bezier(.5, 0, .5,1);
+  }
+  
+  
+  
+  .nav__link{
+    text-decoration:none;
+    color:pink;
+    font-weight:bold;
+  }
+  .nav__link:hover{
+    color:aqua; 
+  }
+  
+  .nav__list {
+      display: flex;
+      list-style: none;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2.5rem;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+  }
+  
+  .nav-toggle{
+    padding:.5em;
+    background:transparent;
+    border:0;
+    cursor:pointer;
+    position:absolute;
+    right:1em;
+    top:3em;
+    z-index:1000;
+  }
+  
+  .nav-open .nav {
+    transform:translateX(0);
+  }
+  
+  .nav-open .nav-toggle {
+    position:fixed;
+    /*new*/
+    transform : scale(0.7);
+    top:-15px;
+    position:relative;
+    left:30px;
+  }
+  
+  .nav-open .humburger {
+    transform:rotate(45deg);
+  }
+  
+  .nav-open .humburger::after {
+      opacity: 0;
+  }
+  
+  .nav-open .humburger::before {
+      transform: rotate(90deg) translateX(-12px);
+  }
+}
+
+  @media (min-width : 1000px){
+    .section__title--about {
+      top: 4rem;
+      position: relative;
+    }
+    .about-me__img{
+     right: 3rem;
+    }
+    .section__subtitle--about {
+       position: relative;
+       bottom: -7rem;
+      line-height: 2;
+      font-size: 1.5rem;
+    }
+    .about-me__img{
+       min-height:30rem;
+     }
+    .services {
+      /* display: flex; */
+      margin: 2em;
+    }
+    h1{
+      font-size : 4.5rem;
+    }
+    h2{
+      font-size : 3.75rem;
+    }
+    h3{
+      font-size : 1.5rem;
+    }
+    body{
+      font-size : 1.125rem;
+    }
+    .cont {
+      display: flex;
+      min-height: 31.25rem;
+    }
+  }
+  
+  /*Services*/
+  .my-services {
+     background-image:url("images/background.jpg");
+     background-size : cover;
+     color: white;
+     text-align : center;
+     margin-top:3em;
+     margin: 3em auto;
+     max-width:100%;
+     padding : 2em;
+  }
+  
+  .services .service p{
+     background-color : rgba(82, 82, 82, .5);
+     padding: 1rem;
+     margin: 1rem;
+     transition: background-color 250ms ease-in;
+     text-align:left;
+     color: mediumspringgreen;
+     font-weight:bold;
+     font-size:1.25rem;
+  }
+  
+  .services .service p:hover{
+     background-color : rgba(82, 82, 82, .7);
+  }
+  
+  .services .service h3{
+     background-color : rgba(82, 82, 82, .7);
+     color:aqua;
+     max-width:10.5rem;
+     margin:0 auto;
+  }
+
+  .service {
+      padding-bottom: 3rem;
+  }
+  
+  
+  services {
+      margin: 0 auto;
+      align-content: center;
+      text-align: left;
+  }
+  #work {
+      width: 100%;
+      margin: 0 auto;
+      background-color:rgba(7, 23, 23, 1);
+  }
+  
+  .section__title--work, .section__subtitle--work {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .section__title--work {
+      color: wheat;
+  }
+  .section__subtitle--work {
+      color: aqua;
+  }
+  
+  
+  .about-me__body p {
+      background-color: rgba(20, 255, 240, 0.3);
+      color: cadetblue;
+      margin-top: auto;
+      font-size: 1.5rem;
+      background-size: cover;
+      border-radius: 3rem;
+      padding: 1em;
+      width:100%;
+  }
+  
+  /*/>600*/
+  
+  .about-me__img {
+    position: relative;
+    height: 20rem;
+    margin: 0 auto;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.25em 0.12em 0.25em rgba(0,0,0,0.25);
+    width: 16rem;
+}
+  
+  #about {
+      max-width: 85rem;
+      margin: 0 auto;
+  }
+  
+  .section__title--services {
+    background-color: rgba(88, 100, 97, 0.5);
+    width: 100%;
+    margin: 0 auto;
+    color: aqua;
+    position: relative;
+    padding-top: 2rem;
+    margin-bottom: 100px;
+}
+  
+  .section__title--services::after {
+    content: '-------';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: #fff;
+    opacity: 0.5;
+    color: darkblue;
+}
+  
+  html{
+     scroll-behavior:smooth;
+  }
+  
+  .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 70rem;
+      width:100%;
+      margin: 0 auto;
+  }
+  
+  
+  }
+  
+  .portfolio__item img {
+      display: block;
+      max-width: 23.3rem;
+      height: 18.75rem;
+  }
+  
+  .section__subtitle--work {
+      margin: 2rem 2rem;
+      font-size: 2rem;
+  }
+  
+  .portfolio_description {
+    display: none;
+  }
+
+  .portfolio__item:focus{
+     position:relative;
+     z-index:2;
+  }
+  
+  .portfolio__img{
+     width:20rem;
+     height:20rem;
+     transition: opacity 250ms, transform 750ms ease-in-out;
+  }
+  .portfolio__item:focus .portfolio__img,
+  .portfolio__img:hover {
+     transform : scale(1.2);
+     opacity: 0.75;
+     overflow : hidden;
+  }
+  .portfolio__item{
+     background-color : aqua;
+     overflow : hidden;
+     margin:0 auto;
+  }
+  
+  header{
+     display:flex;
+     justify-content : space-between;
+     padding : 1em;
+  }
+  
+
+  .btn {
+      color: white;
+      position: relative;
+      bottom: 2rem;
+      text-decoration: none;
+      font-size: 2rem;
+      background-image: linear-gradient(to right, pink, transparent 100%);
+      transition: background-position 750ms cubic-bezier(.5, 0, .5, 1);
+      background-size:100% 100%;
+      background-position: -7.8rem;
+      background-color: rgba(82, 82, 82, 0.6);
+  }
+  
+  
+  
+  
+  
+  
+  .btn:hover {
+      background-position: 0;
+  }
+  
+  .social-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .social-list__item .social-list__link img {
+     width:50px;
+  }
+  
+  .social-list__item .social-list__link img:hover {
+    transform: scale(1.1);
+ }
+
+ .footer__link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  max-width: 19rem;
+  color: wheat;
+  border: 1.5px solid wheat;
+}
+  
+  
+  .footer__link:hover {
+      background-color: gold;
+      color:purple;
+  }
+  
+  
+  .footer {
+    width: 100%;
+    padding-bottom: 1rem;
+    background-color: rgba(44, 44, 53, .95);
+    padding-top: 1rem;
+    margin-top: 1px;
+  }
+   
+  #scrollDown, #scrollUp {
+    position: fixed;
+    cursor: pointer;
+    border: none;
+    background-color: wheat;
+    z-index: 1000000;
+    display:none
+  }
+#scrollDown{
+  right: 10px;
+  bottom: 10px;
+}
+
+#scrollUp{
+  right: 10px;
+  bottom: 80px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  box-shadow: rgba(0,0,0,0.25);
+}
+
+@media (min-width:850px) {
+  .service1, .service2{
+    display: flex;
+  }
+
+  .services .service h3{
+    max-width: 12rem;
+  }
+  
+}
+
+.portfolio__item div {
+  translate: 10px;
+}
+
+.portfolio__item div:hover {
+  display: block;
+}
+
+p.copyright {
+    display: flex;
+    justify-content: center;
+    color: azure;
+    padding-top: 10px;
+}
+
+.certificates_container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding:.5rem;
+  background-color: peachpuff;
+}
+
+.certificates_container .title {
+  font-family: cursive;
+  border: 1px solid purple;
+  background-color: #f5f9f2;
+  text-align: center;
+}
+
+.certificates_container div {
+  padding: 1rem;
+}
+
+p a {
+  text-decoration: none;
+  background-color: ghostwhite;
+  padding: .15rem;
+  font-family: system-ui;
+}
+
+p a:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+p#credential, p.issuing-organization {
+  font-family: monospace;
+  font-size: 17px;
+  padding: .25rem;
+}
+
+.huawei {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width:392px) {
+  p a{
+    display: block;
+    max-width: 200px;
+    float: right;
+    clear: both;
+  }
+
+  .huawei {
+    font-size: 15px;
+    margin: 5px;
+}
+
+}
+
+.certificate {
+  border: 1px  black;
+  border: ridge;
+}
