@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Google Analytics -->
+<script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+   
+   ga('create', 'UA-XXXXX-Y', 'auto');
+   ga('send', 'pageview');
+   </script>
+   <!-- End Google Analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="qaZq3H7AwMov-Ao1Matkx6RUeuhmEroCblZX6tXuk2Q" />
+      <meta property="og:title" content="BISRAT WALLE" />
+      <meta property="og:type" content="Portfoloio Website" />
+      <meta property="og:url" content="" />
+      <meta property="og:image" content="images/bisrat1.jpg" />
+      <meta property="og:description" content="This is a website for my woks done earlier." />
+	  {% load static %}
+    <link rel="shorcut icon" type="image/png" href="{% static 'pages/images/favicon.ico' %}">
+    <title>Bisrat Walle</title>
+	
+    <link rel="stylesheet" href="{% static 'pages/style.css' %}" type="text/css">
+</head>
+<body>
+		{% include "navigation.html" %}
+ 
+     <button id="scrollDown" onclick="backToTop()"><img class="icon" src="images/down.png" alt=""></button>
+     <button id="scrollUp"><img class="icon" src="images/up.png" alt=""></button>
+
+     <!-- Introduction -->
+     <div class = "introd">
+     <section class = "intro" id = "home">
+         <h1 class = "section__title section__title--intro">
+            Hi, I am <strong>Bisrat Walle</strong>
+        </h1>
+        <p class = "section__subtitle section__subtitle--intro">AI Engineer</p>
+        <img title="Bisrat Walle" src = "{% static 'pages/images/bisrat1.jpg' %}" alt = "picture of Bisrat" class = "intro__img"> 
+     </section>
+     </div>
+     
+     <!-- My Services -->      
+     <section class = "my-services" id = "services">
+        <h2 class = "section__title section__title--services">What I do</h2>
+        <div class = "services">
+           <div class="service1">
+            <div class = "service">
+               <h3>Web Design</h3>
+               <p>
+                  I can develop interactive webpages for you using HTML, 
+                  CSS, and JavaScript for your website. If you want to have 
+                  awesome website with range of fantastic CSS animations and JavaScript definite 
+                  functionality, you come to the right place!
+               </p>
+            </div>
+            <div class = "service">
+               <h3>App Development</h3>
+               <p>
+                  Applications aren't just combination of codes and some graphical design.
+                  Above all their aim is the driving force for their development. Some of 
+                  them may simplify human task, other used for entertainment like games 
+                  the reset may also be used for different tasks. Anyway if you want desktop 
+                  or mobile applications, i can develop for you using a combination of JAVA, 
+                  C++, and C# with .NET framework.
+               </p>
+            </div>
+           </div>
+
+           <div class="service2">
+            <div class = "service">
+               <h3>IT Security</h3>
+               <p>
+                  I can prevent unauthorized access to your computers, networks and data using 
+                  set of cybersecurity strategies. Moreover I will maintain confidentiality of 
+                  sensitive information, blocking the access of sophisticated hackers.
+               </p>
+            </div>
+  
+            <div class = "service">
+             <h3>Automation</h3>
+             <p>
+                I can help you by automating boring and repeative tasks using python programming language. 
+                Automation make such tasks to be completed within a fraction of seconds, which may originally take hours, days, or even months.
+             </p>
+          </div>
+           </div>
+
+        </div>
+        <a href = "#work" class = "btn">My Work</a>
+     </section>
+ 
+     <!-- About Me-->
+     <section class = "about-me" id = "about">
+        <h2 class = "section__title  section__title--about">Who Am I</h2>
+        <p class = "section__subtitle section__subtitle--about">AI Engineer and Data&nbsp;Scientist</p>
+        <div class = "cont">
+        <div class = "about-me__body">
+           <p>
+                I was born in Nefas-Mewucha on Augest 12,2001.In childhood, we moved to bole villege, 1 kilometer from 
+                our earlier villege.When i grewup and my age reach minimum age for education i joined Zanti primary 
+                school.I completed Grade 1 in this School.On the next year I transfered to Nefas-Mewucha primary school 
+                and I completed my primary education in this School.Consequently, I joined first Nefas-Mewucha High 
+                school then Nefas-Mewucha preparatory School finishing my secondary education.Now I am taking Software Engineering 
+                Course at Addis Ababa University.
+           </p>
+        </div>
+        <img src = "{% static 'pages/images/bisrat2.jpg' %}" alt = "img" class = "about-me__img">
+        </div>
+     </section>
+ 
+     <!-- About me-->
+     <section class = "my-work" id = "work" >
+       <h2 class = "section__title section__title--work">My Work</h2>
+       <p class = "section__subtitle section__subtitle--work">Selection of my range of work</p>
+ 
+       <div class = "portfolio">
+         <!-- portifolio-item 01-->
+         <a href = "#" class = "portfolio__item" id="portfolio_1">
+            <div class="portfolio_1-description portfolio_description">portfolio_1</div>
+            <img src = "{% static 'pages/images/portfolio_6.jpg' %}" alt = "" class = "portfolio__img">
+         </a>
+ 
+         <!-- portifolio-item 02-->
+         <a href = "#" class = "portfolio__item" id="portfolio_2">
+            <div class="portfolio_2-description portfolio_description">portfolio_2</div>
+            <img src = "{% static 'pages/images/portfolio_5.jpg' %}"alt = "" class = "portfolio__img">
+         </a>
+ 
+         <!-- portifolio-item 03-->
+         <a href = "#" class = "portfolio__item" id="portfolio_3">
+            <div class="portfolio_3-description portfolio_description">portfolio_3</div>
+            <img src = "{% static 'pages/images/portfolio_1.jpg' %}" alt = "" class = "portfolio__img">
+         </a>
+ 
+         <!-- portifolio-item 04-->
+         <!-a href = "#" class = "portfolio__item" id="portfolio_4" mouseover>
+            <div class="portfolio_4-description portfolio_description">portfolio_4</div>
+            <img src = "{% static 'pages/images/portfolio_2.jpg' %}" alt = "" class = "portfolio__img">
+         </a>
+ 
+         <!-- portifolio-item 05-->
+         <a href = "#" class = "portfolio__item" id="portfolio_5">
+            <div class="portfolio_5-description portfolio_description">portfolio_5</div>
+            <img src = "{% static 'pages/images/portfolio_7.jpg' %}" alt = "" class = "portfolio__img">
+         </a>
+ 
+         <!-- portifolio-item 06-->
+         <a href = "#" class = "portfolio__item" id="portfolio_6">
+            <div class="portfolio_6-description portfolio_description">portfolio_6</div>
+            <img src = "{% static 'pages/images/portfolio_4.jpg' %}" alt = "" class = "portfolio__img">
+         </a>
+       </div>
+     </section>
+     <!--footer-->
+     
+	{% include "footer.html" %}
+     
+</body>
+<script src="{% static 'pages/main.js' %}" type="text/javascript"></script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta property="og:title" content="My Certificates" />
+      <meta property="og:type" content="Certificates" />
+      <meta property="og:url" content="" />
+      <meta property="og:image" content="images/bisrat1.jpg" />
+      <meta property="og:description" content="This is a website for my certificates received earlier." />
+    <title>Certificates</title>
+	{% load static %}
+    <link rel="stylesheet" href="{% static 'pages/style.css' %}" type="text/css">
+</head>
+<body>
+		{% include "navigation.html"%}
+     <div class="certificates_container">
+	<div id="python_certificate-udemy" class="certificate">
+            <p class="title title-python">Python Programming - From Basics to Advanced level [2021]</p>
+            <p class="issuing-organization">Issuing Organization: <a href="#">Udemy</a></p>
+            <p id="credential">Credential: <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-037f3953-cf70-475b-957d-b430825f53fb.jpg">click to see the credential</a></p>
+        </div>
+	
+        <div id="python_certificate-freecodecamp" class="certificate">
+            <p class="title title-python">Scientific Computing with Python</p>
+            <p class="issuing-organization">Issuing Organization: <a href="#">freeCodeCamp</a></p>
+            <p id="credential">Credential: <a href="https://freecodecamp.org/certification/bisrat_walle/scientific-computing-with-python-v7">click to see the credential</a></p>
+        </div>
+
+        <div id="python_certificate-huawei" class="certificate">
+            <p class="title title-python">Basic Python for Artificial Intelligence</p>
+            <p class="issuing-organization">Issuing Organization: <a class="huawei" href="www.huawei.com">Huawei-Telecommunication company</a></p>
+            <p id="credential">Credential: <a href="https://ilearningx.huawei.com/portal/certificates/770f1d7bed9b43669337c9e5b6bbad8c">click to see the credential</a></p>
+        </div>
+
+        <div id="mathematics_certificate-huawei" class="certificate">
+            <p class="title title-mathematics">Basic Mathematics for Artificial Intelligence</p>
+            <p class="issuing-organization">Issuing Organization: <a href="www.huawei.com" class="huawei">Huawei-Telecommunication company</a></p>
+            <p id="credential">Credential: <a href="https://ilearningx.huawei.com/portal/certificates/9b4d9fb7104d429a95381f77a1da1b92">click to see the credential</a></p>
+        </div>
+	
+	<div id="python_certificate-tekzone" class="certificate">
+            <p class="title title-python_intermidate">Python-Intermidiate</p>
+            <p class="issuing-organization">Issuing Organization: <a href="#">TekZone</a></p>
+            <p id="credential">Credential: <a href="images/python_intermidate_Certificate.pdf">click to see the credential</a></p>
+        </div>
+
+	<div id="python_certificate-freecodecamp" class="certificate">
+            <p class="title title-dsa">JavaScript Algorithms and Data Structures</p>
+            <p class="issuing-organization">Issuing Organization: <a href="#">freeCodeCamp</a></p>
+            <p id="credential">Credential: <a href="hhttps://freecodecamp.org/certification/bisrat_walle/javascript-algorithms-and-data-structures">click to see the credential</a></p>
+        </div>
+
+     </div>
+
+     <script src="main.js"></script>
+
+</body>
+</html>

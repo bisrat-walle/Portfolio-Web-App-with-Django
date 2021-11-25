@@ -1,0 +1,18 @@
+ {% load static %}
+ <header>
+        <div class = "logo">
+            <img src = "{% static 'pages/images/logo.jpg' %}" alt = "logo">
+        </div>
+        <button class = "nav-toggle" aria-label = "toggle navigation">
+            <span class = "humburger"></span>
+        </button>
+        <div class = "nav">
+        <ul class = "nav__list">
+               <li title="Go to home-page" class = "nav__item home"><a href = "/home" class = "nav__link"><!--<img src = "home.png" width = "50px" height = "50px">-->Home</a></li>
+               <li title="Services for you" class="nav__item"><a href = "/home" class = "nav__link">My Service</a></li>
+               <li title="Do you want to explore more about Bisrat Walle" class = "nav__item"><a href = "/home" class = "nav__link">About</a></li>
+               <li title="Works done before" class = "nav__item"><a href = "/home" class = "nav__link">My Work</a></li>
+		         <li class = "nav__item"><a href = "/certificates" class = "nav__link">My Certificates</a></li>
+            </ul>
+        </div>
+</header>
